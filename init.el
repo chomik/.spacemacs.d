@@ -328,6 +328,10 @@ you should place your code here."
   (setq powerline-default-separator 'arrow)
   (beacon-mode 1)
   (editorconfig-mode 1)
+  ;; use chrome as default browser
+  (setq
+   browse-url-browser-function 'browse-url-generic
+   browse-url-generic-program "google-chrome-stable")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
